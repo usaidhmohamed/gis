@@ -1,0 +1,25 @@
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    margin: 0;
+    text-align: center;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 10px;
+}
+
+footer, .jumbotron, body{
+    background-color: #3a3f41;
+    color: #dfeff1;
+}
+
+footer {
+    background-color: #101010;
+}
+
