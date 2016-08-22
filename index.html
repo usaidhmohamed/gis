@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app='App'>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=egde"/>
+	<title>GIS Solutions</title>
+
+	<!-- LIBRARIES -->
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+  <script src="https://code.angularjs.org/1.3.0/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.0/angular-route.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.0/angular-resource.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.0/angular-sanitize.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	<!-- STYLE / THEME -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//cdncatalog.com/assets/flat-ui/css/flat-ui.css" rel="stylesheet">
+	<link href="view/css/style.css" rel="stylesheet">
+
+	<!-- THIS APP. -->
+	<script src="controller/services.js"></script>
+  <script src="controller/directives.js"></script>
+  <script src="controller/filters.js"></script>
+  <script src="controller/controllers.js"></script>
+  <script src="App.js"></script>
+  <script src="simpleslider.min.js"></script>
+  <script>
+    var imgSlider = new SimpleSlider( document.getElementById('myslider') );
+  </script>
+</head>
+
+<body class="container-fluid">
+<div class="jumbotron row">
+  <div class="col-md-6 col-md-offset-1">
+    <!-- COLUMN 1 -->
+    <h1>GIS SOLUTIONS</h1>
+    <p>This is a Skeleton built by A.I. Usaidh Mohamed.</p>
+    <!-- END COLUMN 1 -->
+  </div>
+  <div class="col-md-4 col-md-offset-1">
+    <!-- COLUMN 2 -->
+    <div class="social-connect">
+      <h3>STAY CONNECTED</h3>
+      <address>
+        <ul class="list-unstyled">
+          <li><strong>GIS Solutions</strong>
+          <li><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Dont Know, Where</li>
+          <li><span class="glyphicon glyphicon-send" aria-hidden="true"></span> yettoget@mail.com</li>
+          <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> +94759891215</li>
+        </ul>
+      </address>
+      <ul class="list-inline social-icons">
+        <li><a href="https://twitter.com/" target="_blank"><img src="view/images/twitter.png" /></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img src="view/images/facebook.png" /></a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank"><img src="view/images/Linkedin.png" /></a></li>
+      </ul>
+    </div>
+    <!-- END COLUMN 2 -->
+  </div>
+</div>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/consulting">Consulting and Services</a></li>
+            <li><a href="#/training">Training</a></li>
+            <li><a href="#/careers">Careers</a></li>
+            <li><a href="#/contact">Contact Us</a></li>
+            <li><a href="#/downloads">Downloads</a></li>
+            <li><a href="#/news">News and Events</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!--fluid-container-->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-sm-12 col-md-offset-1">
+          <div class="row-fluid" ng-view><!-- VIEWS --></div>
+        </div><!--/span-->
+      </div><!--/row-->
+    </div>
+    <!--/.fluid-container-->
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+            <h3>FIND YOUR WAY</h3>
+        <div class="row">
+              <div class="col-xs-3">
+                <ul class="list-unstyled footer-nav">
+                  <li><a href="#/home">Home</a></li>
+                  <li><a href="#/about">About</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-3">
+                <ul class="list-unstyled footer-nav">
+                  <li><a href="#/consulting">Consulting and Services</a></li>
+                  <li><a href="#/training">Training</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-3">
+                <ul class="list-unstyled footer-nav">
+                  <li><a href="#/careers">Careers</a></li>
+                  <li><a href="#/contact">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-3">
+                <ul class="list-unstyled footer-nav">
+                  <li><a href="#/downloads">Downloads</a></li>
+                  <li><a href="#/news">News and Events</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <p>&copy; Developed By A.I. Usaidh Mohamed. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-2">
+              <p><strong>Version</strong> 0.1.1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END COPYRIGHT -->
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>
